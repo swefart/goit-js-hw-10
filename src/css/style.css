@@ -1,0 +1,69 @@
+.breed-select {
+}
+.loader-box {
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  margin-top: 8px;
+  content: '';
+  width: 48px;
+  height: 48px;
+  border: 2px solid green;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  animation: rotation 2s ease-in-out infinite;
+}
+.loader::after {
+  border-color: #ff3d00;
+  animation-delay: 1s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  /* visibility: hidden; */
+}
+.cat-info {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cat-info-box {
+  height: 300px;
+}
+.cat-img {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+}
+.cat-name {
+}
+.cat-description {
+}
+.cat-temp {
+}
+.cat-temp-title {
+  font-weight: 800;
+}
+
+.visible {
+  display: none;
+}
